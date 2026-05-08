@@ -3,136 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blueberry Basement | Meeting Mayhem</title>
-    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
-    <meta name="description" content="Blueberry Basement presents Meeting Mayhem - A puzzle game focused on resolving congested calendar schedules.">
+    <title>Meeting Mayhem | Pre-register on Google Play</title>
+    <link rel="icon" type="image/png" href="assets/game/logo.png">
+    <meta name="description" content="Pre-register for Meeting Mayhem on Google Play! A stunning puzzle game where you resolve calendar chaos with candy neumorphic aesthetics.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blueberrybasement.com/">
+    <meta property="og:title" content="Meeting Mayhem | Pre-register Now">
+    <meta property="og:description" content="Resolve calendar chaos in this visually stunning puzzle game. Pre-register now on Google Play!">
+    <meta property="og:image" content="assets/game/feature.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://blueberrybasement.com/">
+    <meta property="twitter:title" content="Meeting Mayhem | Pre-register Now">
+    <meta property="twitter:description" content="Resolve calendar chaos in this visually stunning puzzle game. Pre-register now on Google Play!">
+    <meta property="twitter:image" content="assets/game/feature.jpg">
+
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Specific hero section styles */
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 80vh;
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .hero-logo-container {
-            margin-bottom: 2rem;
-            position: relative;
-        }
-
-        .hero-logo-container::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 140%;
-            height: 140%;
-            background: radial-gradient(circle, var(--color-lightblue) 0%, transparent 60%);
-            filter: blur(40px);
-            opacity: 0.3;
-            z-index: -1;
-            animation: pulseBg 4s infinite alternate;
-        }
-
-        @keyframes pulseBg {
-            0% { opacity: 0.2; transform: translate(-50%, -50%) scale(0.95); }
-            100% { opacity: 0.4; transform: translate(-50%, -50%) scale(1.05); }
-        }
-
-        .hero-logo {
-            width: 200px;
-            height: auto;
-            border-radius: 30px;
-            box-shadow: var(--glass-shadow);
-            border: 2px solid var(--glass-border);
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-        }
-
-        .feature-card {
-            padding: 30px;
-            text-align: left;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--color-orange);
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-
-        .tagline {
-            font-size: 1.5rem;
-            color: var(--color-lightblue);
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-    </style>
 </head>
 <body>
 
-    <div class="container">
-        <nav>
-            <div class="brand-logo">
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
                 <img src="assets/logo.jpg" alt="Blueberry Basement Logo">
                 Blueberry Basement
-            </div>
+            </a>
             <button class="mobile-toggle">&#9776;</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="privacy.html">Privacy Policy</a></li>
                 <li><a href="terms.html">Terms of Use</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
 
-        <section class="hero fade-in">
+    <section class="hero fade-in">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
             <div class="hero-logo-container">
-                <img src="assets/logo.jpg" alt="Blueberry Basement" class="hero-logo">
+                <img src="assets/game/logo.png" alt="Meeting Mayhem Logo" class="hero-logo">
             </div>
-            <div class="tagline">Our Debut Title</div>
+            <div class="tagline">Now in Pre-Registration</div>
             <h1>Meeting Mayhem</h1>
-            <p style="max-width: 600px; margin-bottom: 2rem;">
-                A puzzle game focused on resolving congested calendar schedules. Will you be able to organize the chaos before you run out of moves?
+            <p class="hero-description">
+                The ultimate calendar-sorting puzzle game. Dive into a world of satisfying organization and resolve the chaos of overlapping schedules.
             </p>
-            <a href="#" class="btn btn-primary">Download Coming Soon</a>
+            <div class="hero-btns">
+                <a href="https://play.google.com/store/apps/details?id=com.BlueberryBasement.MeetingMayhem" target="_blank" class="btn btn-primary btn-google-play">
+                    <span class="btn-icon">
+                        <svg viewBox="0 0 512 512" width="24" height="24" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l220.7-127.3-60.7-60.7L104.6 499z"></path>
+                        </svg>
+                    </span>
+                    Pre-register on Google Play
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="screenshots" class="screenshots-section fade-on-scroll">
+            <h2 class="section-title">Key Features</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-card">
+                    <img src="assets/game/Resolve all overlaps.png" alt="Gameplay - Resolve Overlaps">
+                    <div class="screenshot-caption">Resolve Chaos</div>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/game/Daily spinner.png" alt="Daily Spinner">
+                    <div class="screenshot-caption">Daily Rewards</div>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/game/Daily tasks.png" alt="Daily Tasks">
+                    <div class="screenshot-caption">Unlock Progress</div>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/game/Sort the schedule.png" alt="Sort Schedule">
+                    <div class="screenshot-caption">Master Strategy</div>
+                </div>
+            </div>
         </section>
 
-        <section class="features-grid">
-            <div class="glass-panel feature-card fade-on-scroll">
-                <div class="feature-icon">🧩</div>
-                <h3>Brain-Teasing Puzzles</h3>
-                <p>Resolve overlaps on a dynamic 30-minute interval calendar grid. Every move counts as you meticulously slide meetings into the perfect timeframe.</p>
-            </div>
-            <div class="glass-panel feature-card fade-on-scroll">
-                <div class="feature-icon">✨</div>
-                <h3>Candy Neumorphic Aesthetics</h3>
-                <p>Experience a visually stunning, frosted glass interface featuring procedural grid grooves, organic wooden audio, and immersive haptic feedback.</p>
-            </div>
-            <div class="glass-panel feature-card fade-on-scroll">
-                <div class="feature-icon">🚀</div>
-                <h3>Dynamic Power-Ups</h3>
-                <p>Equip powerful tools like the Booster, Shortener, or Unlocker. Spend earned Coffee strategically to intervene in impossibly chaotic schedules.</p>
+        <section class="features-section fade-on-scroll">
+            <h2 class="section-title">Gameplay Experience</h2>
+            <div class="features-grid">
+                <div class="glass-panel feature-card">
+                    <div class="feature-icon">🧩</div>
+                    <h3>Brain-Teasing Puzzles</h3>
+                    <p>Resolve overlaps on a dynamic 30-minute interval calendar grid. Every move counts as you meticulously slide meetings into the perfect timeframe.</p>
+                </div>
+                <div class="glass-panel feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Candy Neumorphic Aesthetics</h3>
+                    <p>Experience a visually stunning, frosted glass interface featuring procedural grid grooves, organic wooden audio, and immersive haptic feedback.</p>
+                </div>
+                <div class="glass-panel feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Dynamic Power-Ups</h3>
+                    <p>Equip powerful tools like the Booster, Shortener, or Unlocker. Spend earned Coffee strategically to intervene in impossibly chaotic schedules.</p>
+                </div>
             </div>
         </section>
     </div>

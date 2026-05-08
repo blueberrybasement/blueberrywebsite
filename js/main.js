@@ -10,6 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Hero Parallax effect
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const heroBg = document.querySelector('.hero-bg-overlay');
+        if (heroBg) {
+            heroBg.style.transform = `translateY(${scrolled * 0.4}px)`;
+        }
+    });
+
     // Intersection Observer for scroll animations
     const observerOptions = {
         root: null,
@@ -20,8 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = "translateY(0)";
+                entry.target.classList.add('is-visible');
                 observer.unobserve(entry.target);
             }
         });
@@ -29,9 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const fadeElements = document.querySelectorAll(".fade-on-scroll");
     fadeElements.forEach(el => {
-        el.style.opacity = 0;
-        el.style.transform = "translateY(20px)";
-        el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
         observer.observe(el);
     });
 });

@@ -14,6 +14,7 @@
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   --neumorphic-light: rgba(255, 255, 255, 0.05);
   --neumorphic-dark: rgba(0, 0, 0, 0.5);
+  --section-padding: 80px 20px;
 }
 
 * {
@@ -86,14 +87,22 @@ a:hover {
 /* Navbar */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(20px);
+  background: rgba(11, 11, 26, 0.8);
   border-bottom: 1px solid var(--glass-border);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .brand-logo {
@@ -161,6 +170,194 @@ nav {
   color: white;
 }
 
+.btn-google-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #000;
+  border: 1px solid var(--glass-border);
+  padding: 14px 32px;
+  font-size: 1.1rem;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+}
+
+/* Sections */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(to bottom, rgba(11, 11, 26, 0.7), var(--color-bg-deep)),
+    url('../assets/game/feature.jpg') center/cover no-repeat;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+.hero > *:not(.hero-bg-overlay) {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo-container {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.hero-logo-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160%;
+  height: 160%;
+  background: radial-gradient(circle, var(--color-lightblue) 0%, transparent 70%);
+  filter: blur(50px);
+  opacity: 0.4;
+  z-index: -1;
+  animation: pulseBg 4s infinite alternate;
+}
+
+@keyframes pulseBg {
+  0% { opacity: 0.3; transform: translate(-50%, -50%) scale(0.9); }
+  100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+.hero-logo {
+  width: 240px;
+  height: auto;
+  border-radius: 48px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  border: 2px solid var(--glass-border);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.tagline {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-lightblue);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Screenshots Section */
+.screenshots-section {
+  padding: var(--section-padding);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.screenshot-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--glass-shadow);
+  border: 1px solid var(--glass-border);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.screenshot-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.screenshot-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-lightblue);
+}
+
+.screenshot-card:hover img {
+  transform: scale(1.05);
+}
+
+.screenshot-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: #FFF;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: var(--section-padding);
+}
+
+.feature-card {
+  padding: 40px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-orange);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
 /* Animations */
 .fade-in {
   opacity: 0;
@@ -173,6 +370,17 @@ nav {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.fade-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Footer */

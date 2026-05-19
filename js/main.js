@@ -51,6 +51,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    document.querySelectorAll('[data-analytics-event="google_play_badge_click"]').forEach(link => {
+        link.addEventListener("click", () => {
+            if (typeof window.gtag !== "function") {
+                return;
+            }
+
+            window.gtag("event", "google_play_badge_click", {
+                app_name: "Meeting Mayhem",
+                button_location: link.dataset.downloadLocation || "unknown",
+                link_url: link.href,
+                outbound: true,
+                transport_type: "beacon"
+            });
+        });
+    });
+
     const lightbox = document.querySelector(".lightbox");
     const lightboxImage = lightbox?.querySelector("img");
     const lightboxCaption = lightbox?.querySelector("figcaption");

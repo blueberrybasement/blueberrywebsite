@@ -1,6 +1,6 @@
 # Meeting Mayhem — Blueberry Basement
 
-> Meeting Mayhem is a free casual calendar puzzle game for Android on Google Play: slide meetings into open time slots, clear overlaps, use power-ups, and complete daily tasks in short sessions.
+> Meeting Mayhem is a free casual calendar puzzle game for Android on Google Play: slide meetings into open time slots, clear overlaps, solve schedule puzzles, use power-ups, and complete daily tasks in short sessions.
 
 Blueberry Basement is an indie label by Szymon Borówka. This small static site is the public home for Meeting Mayhem: it summarizes gameplay, shows screenshots, answers common questions, links to the official Play Store listing, and hosts privacy and terms pages linked from the app.
 
@@ -8,7 +8,7 @@ The site is English-only. The home page includes JSON-LD (`MobileApplication`, `
 
 ## Site
 
-- [Meeting Mayhem — landing page](https://blueberrybasement.com/): Hero, gameplay summary, screenshots, feature list, FAQ (`#faq`), Google Play badges, and structured data for the game.
+- [Meeting Mayhem — landing page](https://blueberrybasement.com/): Hero, gameplay summary, audience and keyword-focused puzzle positioning, screenshots, feature list, FAQ (`#faq`), Google Play badges, and structured data for the game.
 
 ## Policies
 

@@ -25,6 +25,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 88px;
 }
 
 body {
@@ -35,6 +36,8 @@ body {
   color: var(--ink);
   line-height: 1.55;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -44,6 +47,11 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(67, 97, 238, 0.38);
+  outline-offset: 4px;
 }
 
 p {
@@ -111,6 +119,14 @@ h3 {
   background: rgba(247, 251, 255, 0.9);
   border-bottom: 1px solid rgba(220, 229, 242, 0.86);
   backdrop-filter: blur(18px);
+  box-shadow: 0 0 0 rgba(23, 32, 51, 0);
+  transition: background-color 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.site-nav.is-scrolled {
+  background: rgba(247, 251, 255, 0.96);
+  border-bottom-color: rgba(197, 209, 226, 0.9);
+  box-shadow: 0 10px 26px rgba(23, 32, 51, 0.08);
 }
 
 .nav-container {
@@ -128,6 +144,7 @@ h3 {
   color: var(--ink);
   font-size: 1.05rem;
   font-weight: 800;
+  transition: color 180ms ease, transform 180ms ease;
 }
 
 .brand-logo img {
@@ -135,6 +152,18 @@ h3 {
   height: 42px;
   border-radius: var(--radius);
   box-shadow: var(--soft-shadow);
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.brand-logo:hover,
+.brand-logo:focus-visible {
+  color: var(--blue);
+}
+
+.brand-logo:hover img,
+.brand-logo:focus-visible img {
+  box-shadow: 0 14px 30px rgba(23, 32, 51, 0.16);
+  transform: translateY(-1px);
 }
 
 .nav-links {
@@ -145,15 +174,38 @@ h3 {
 }
 
 .nav-links a {
+  position: relative;
   color: var(--muted);
   font-size: 0.95rem;
   font-weight: 700;
+  transition: color 180ms ease;
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible,
 .nav-links a.is-active {
   color: var(--blue);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 999px;
+  opacity: 0;
+  transform: scaleX(0.55);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after,
+.nav-links a.is-active::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 .mobile-toggle {
@@ -205,6 +257,8 @@ h3 {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transform: scale(1.012);
+  animation: heroDrift 1400ms ease-out both;
 }
 
 .hero-shade {
@@ -235,6 +289,12 @@ h3 {
   border-radius: 28px;
   object-fit: cover;
   box-shadow: var(--shadow);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.hero-logo:hover {
+  box-shadow: 0 24px 58px rgba(23, 32, 51, 0.2);
+  transform: translateY(-2px) scale(1.015);
 }
 
 .eyebrow {
@@ -380,6 +440,13 @@ h3 {
   border: 1px solid var(--line);
   border-left: 5px solid var(--coral);
   border-radius: var(--radius);
+  transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.audience-list div:hover {
+  background: var(--surface);
+  box-shadow: var(--soft-shadow);
+  transform: translateY(-2px);
 }
 
 .audience-list div:nth-child(2) {
@@ -423,6 +490,16 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.showcase-media img,
+.download-art img {
+  transition: transform 360ms ease;
+}
+
+.showcase-media:hover img,
+.download-art:hover img {
+  transform: scale(1.025);
+}
+
 .showcase-media::after,
 .download-art::after,
 .screenshot-card::after {
@@ -457,7 +534,7 @@ h3 {
   cursor: zoom-in;
   font: inherit;
   text-align: left;
-  transition: box-shadow 220ms ease, transform 220ms ease;
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
 }
 
 .screenshot-card img {
@@ -465,6 +542,7 @@ h3 {
 }
 
 .screenshot-card:hover {
+  border-color: rgba(67, 97, 238, 0.28);
   box-shadow: var(--shadow);
   transform: translateY(-3px);
 }
@@ -646,15 +724,30 @@ footer {
   padding: 28px;
   background: rgba(17, 24, 39, 0.84);
   backdrop-filter: blur(14px);
+  opacity: 0;
 }
 
 .lightbox[hidden] {
   display: none;
 }
 
+.lightbox.is-open {
+  animation: lightboxIn 180ms ease forwards;
+}
+
+.lightbox.is-closing {
+  animation: lightboxOut 160ms ease forwards;
+}
+
 .lightbox-frame {
   width: min(1180px, 100%);
   margin: 0;
+  transform: translateY(8px) scale(0.985);
+  transition: transform 180ms ease;
+}
+
+.lightbox.is-open .lightbox-frame {
+  transform: translateY(0) scale(1);
 }
 
 .lightbox-frame img {
@@ -689,6 +782,7 @@ footer {
   border-radius: var(--radius);
   cursor: pointer;
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+  transition: box-shadow 160ms ease, transform 160ms ease;
 }
 
 .lightbox-close span {
@@ -748,8 +842,9 @@ footer p {
 
 .fade-on-scroll {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 560ms ease, transform 560ms ease;
+  transform: translateY(22px);
+  transition: opacity 640ms ease, transform 640ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
 }
 
 .fade-on-scroll.is-visible {
@@ -765,6 +860,33 @@ footer p {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes heroDrift {
+  from {
+    transform: scale(1.045);
+  }
+  to {
+    transform: scale(1.012);
+  }
+}
+
+@keyframes lightboxIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lightboxOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
@@ -814,15 +936,28 @@ footer p {
     border: 1px solid var(--line);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 180ms ease, transform 180ms ease;
   }
 
   .nav-links.active {
     display: flex;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .nav-links a {
     display: block;
     padding: 13px 12px;
+  }
+
+  .nav-links a::after {
+    bottom: 6px;
+    left: 12px;
+    right: auto;
+    width: 28px;
+    transform-origin: left;
   }
 
   .brand-logo span {
@@ -889,5 +1024,10 @@ footer p {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .hero-art img {
+    animation: none !important;
+    transform: none !important;
   }
 }

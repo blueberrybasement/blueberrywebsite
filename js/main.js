@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const siteNav = document.querySelector(".site-nav");
     const mobileToggle = document.querySelector(".mobile-toggle");
     const navLinks = document.querySelector(".nav-links");
+
+    const updateNavState = () => {
+        siteNav?.classList.toggle("is-scrolled", window.scrollY > 12);
+    };
+
+    updateNavState();
+    window.addEventListener("scroll", updateNavState, { passive: true });
 
     if (mobileToggle && navLinks) {
         mobileToggle.addEventListener("click", () => {
@@ -19,28 +28,65 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", event => {
+            const targetId = anchor.getAttribute("href");
+
+            if (!targetId || targetId === "#") {
+                return;
+            }
+
+            const target = document.querySelector(targetId);
+
+            if (!target) {
+                return;
+            }
+
+            event.preventDefault();
+            target.scrollIntoView({
+                behavior: prefersReducedMotion ? "auto" : "smooth",
+                block: "start"
+            });
+            history.pushState(null, "", targetId);
+        });
+    });
+
     const lightbox = document.querySelector(".lightbox");
     const lightboxImage = lightbox?.querySelector("img");
     const lightboxCaption = lightbox?.querySelector("figcaption");
     const lightboxClose = lightbox?.querySelector(".lightbox-close");
     let lastFocusedElement = null;
+    let closeTimer = null;
 
     const closeLightbox = () => {
         if (!lightbox) {
             return;
         }
 
-        lightbox.hidden = true;
-        document.body.style.overflow = "";
+        const finishClose = () => {
+            lightbox.hidden = true;
+            lightbox.classList.remove("is-open", "is-closing");
+            document.body.style.overflow = "";
 
-        if (lightboxImage) {
-            lightboxImage.src = "";
-            lightboxImage.alt = "";
+            if (lightboxImage) {
+                lightboxImage.src = "";
+                lightboxImage.alt = "";
+            }
+
+            if (lastFocusedElement) {
+                lastFocusedElement.focus();
+            }
+        };
+
+        if (prefersReducedMotion) {
+            finishClose();
+            return;
         }
 
-        if (lastFocusedElement) {
-            lastFocusedElement.focus();
-        }
+        lightbox.classList.remove("is-open");
+        lightbox.classList.add("is-closing");
+        window.clearTimeout(closeTimer);
+        closeTimer = window.setTimeout(finishClose, 170);
     };
 
     document.querySelectorAll(".screenshot-card").forEach(card => {
@@ -54,6 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
             lightboxImage.alt = card.dataset.lightboxAlt || "";
             lightboxCaption.textContent = card.dataset.lightboxCaption || "";
             lightbox.hidden = false;
+            lightbox.classList.remove("is-closing");
+            lightbox.classList.add("is-open");
             document.body.style.overflow = "hidden";
             lightboxClose?.focus();
         });
@@ -89,7 +137,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }, observerOptions);
 
     const fadeElements = document.querySelectorAll(".fade-on-scroll");
-    fadeElements.forEach(el => {
+    fadeElements.forEach((el, index) => {
+        el.style.setProperty("--reveal-delay", `${Math.min(index * 35, 180)}ms`);
         observer.observe(el);
     });
 });

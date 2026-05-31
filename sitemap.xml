@@ -2,19 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blueberrybasement.com/</loc>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://blueberrybasement.com/articles/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/articles/calendar-puzzle-game.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/articles/free-android-puzzle-games-short-sessions.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/articles/how-to-solve-overlapping-meeting-puzzles.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/articles/meeting-mayhem-gameplay-guide.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://blueberrybasement.com/privacy.html</loc>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://blueberrybasement.com/terms.html</loc>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

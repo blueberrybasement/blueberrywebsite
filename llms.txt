@@ -1,23 +1,28 @@
-# Meeting Mayhem — Blueberry Basement
+# Meeting Mayhem - Blueberry Basement
 
 > Meeting Mayhem is a free casual calendar puzzle game for Android on Google Play: slide meetings into open time slots, clear overlaps, solve schedule puzzles, use power-ups, and complete daily tasks in short sessions.
 
-Blueberry Basement is an indie label by Szymon Borówka. This small static site is the public home for Meeting Mayhem: it summarizes gameplay, shows screenshots, answers common questions, links to the official Play Store listing, and hosts privacy and terms pages linked from the app.
+Blueberry Basement is an indie label by Szymon Borowka. This static site is the public home for Meeting Mayhem: it summarizes gameplay, shows screenshots, answers common questions, links to the official Play Store listing, and hosts privacy and terms pages linked from the app.
 
-The site is English-only. The home page includes JSON-LD (`MobileApplication`, `Organization`, `WebSite`, `FAQPage`) that matches visible copy where applicable.
+The site is English-only. The home page includes JSON-LD (`MobileApplication`, `Organization`, `WebSite`, `FAQPage`) that matches visible copy where applicable. Article pages include `Article` JSON-LD and canonical URLs.
 
 ## Site
 
-- [Meeting Mayhem — landing page](https://blueberrybasement.com/): Hero, gameplay summary, audience and keyword-focused puzzle positioning, screenshots, feature list, FAQ (`#faq`), Google Play badges, and structured data for the game.
+- [Meeting Mayhem landing page](https://blueberrybasement.com/): Hero, gameplay summary, audience and keyword-focused puzzle positioning, screenshots, feature list, FAQ (`#faq`), Google Play badges, and structured data for the game.
+- [Articles](https://blueberrybasement.com/articles/): Article hub for Meeting Mayhem, mobile game design, puzzle strategy, productivity themes, and indie development.
+- [What Is a Calendar Puzzle Game?](https://blueberrybasement.com/articles/calendar-puzzle-game.html): Explains calendar puzzle games, schedule puzzles, overlapping meetings, player strategy, and Meeting Mayhem as a playable example.
+- [10 Free Android Puzzle Games for Short Sessions](https://blueberrybasement.com/articles/free-android-puzzle-games-short-sessions.html): Top 10 list of quick-play Android puzzle games, including Flow Free, Two Dots, Unblock Me, Meeting Mayhem, Sudoku.com, Infinity Loop, Blockudoku, Brain It On!, Puzzledom, and KAMI 2.
+- [How to Solve Overlapping Meeting Puzzles](https://blueberrybasement.com/articles/how-to-solve-overlapping-meeting-puzzles.html): Strategy guide for clearing meeting conflicts, protecting long slots, working around locked events, and using power-ups.
+- [Meeting Mayhem Gameplay Guide](https://blueberrybasement.com/articles/meeting-mayhem-gameplay-guide.html): Branded guide covering the game loop, daily tasks, rewards, beginner strategy, and puzzle-solving habits.
 
 ## Policies
 
-- [Privacy Policy](https://blueberrybasement.com/privacy.html): What the Android app may collect, AI-related disclosures, third-party SDKs (e.g. Google Play Services, AdMob, Firebase, Unity), retention, children’s privacy, and contact.
+- [Privacy Policy](https://blueberrybasement.com/privacy.html): What the Android app may collect, AI-related disclosures, third-party SDKs (e.g. Google Play Services, AdMob, Firebase, Unity), retention, children's privacy, and contact.
 - [Terms of Use](https://blueberrybasement.com/terms.html): License, acceptable use, third-party terms references, liability, updates, and contact.
 
 ## App listing
 
-- [Google Play — Meeting Mayhem](https://play.google.com/store/apps/details?id=com.BlueberryBasement.MeetingMayhem): Official Android install page. Application ID: `com.BlueberryBasement.MeetingMayhem`.
+- [Google Play - Meeting Mayhem](https://play.google.com/store/apps/details?id=com.BlueberryBasement.MeetingMayhem): Official Android install page. Application ID: `com.BlueberryBasement.MeetingMayhem`.
 
 ## Optional
 

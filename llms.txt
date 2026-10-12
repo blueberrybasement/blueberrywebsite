@@ -1,19 +1,23 @@
 # Meeting Mayhem - Blueberry Basement
 
-> Meeting Mayhem is a free casual calendar puzzle game for Android on Google Play: slide meetings into open time slots, clear overlaps, solve schedule puzzles, use power-ups, and complete daily tasks in short sessions.
+> Meeting Mayhem is a free calendar scheduling puzzle game for Android on Google Play: slide meetings into open time slots, clear overlaps, solve schedule puzzles, use power-ups, and complete daily tasks in short sessions.
 
 Blueberry Basement is an indie label by Szymon Borowka. This static site is the public home for Meeting Mayhem: it summarizes gameplay, shows screenshots, answers common questions, links to the official Play Store listing, and hosts privacy and terms pages linked from the app.
 
-The site is English-only. The home page includes JSON-LD (`MobileApplication`, `Organization`, `WebSite`, `FAQPage`) that matches visible copy where applicable. Article pages include `Article` JSON-LD and canonical URLs.
+The site is English-only. Meeting Mayhem is available for Android through the official Google Play listing below.
 
 ## Site
 
-- [Meeting Mayhem landing page](https://blueberrybasement.com/): Hero, gameplay summary, audience and keyword-focused puzzle positioning, screenshots, feature list, FAQ (`#faq`), Google Play badges, and structured data for the game.
-- [Articles](https://blueberrybasement.com/articles/): Article hub for Meeting Mayhem, mobile game design, puzzle strategy, productivity themes, and indie development.
-- [What Is a Calendar Puzzle Game?](https://blueberrybasement.com/articles/calendar-puzzle-game.html): Explains calendar puzzle games, schedule puzzles, overlapping meetings, player strategy, and Meeting Mayhem as a playable example.
+- [Meeting Mayhem landing page](https://blueberrybasement.com/): Game overview, screenshots, features, common questions, and the official Android download link.
+- [Articles](https://blueberrybasement.com/articles/): Guides to Meeting Mayhem rules and scheduling puzzle strategy, plus the story behind the mobile game.
+- [Calendar Puzzle Games: How Scheduling Puzzles Work](https://blueberrybasement.com/articles/calendar-puzzle-game.html): Defines scheduling puzzles, explains Meeting Mayhem rules and calendar limits, and distinguishes digital scheduling from physical calendar puzzles.
 - [10 Free Android Puzzle Games for Short Sessions](https://blueberrybasement.com/articles/free-android-puzzle-games-short-sessions.html): Top 10 list of quick-play Android puzzle games, including Flow Free, Two Dots, Unblock Me, Meeting Mayhem, Sudoku.com, Infinity Loop, Blockudoku, Brain It On!, Puzzledom, and KAMI 2.
-- [How to Solve Overlapping Meeting Puzzles](https://blueberrybasement.com/articles/how-to-solve-overlapping-meeting-puzzles.html): Strategy guide for clearing meeting conflicts, protecting long slots, working around locked events, and using power-ups.
-- [Meeting Mayhem Gameplay Guide](https://blueberrybasement.com/articles/meeting-mayhem-gameplay-guide.html): Branded guide covering the game loop, daily tasks, rewards, beginner strategy, and puzzle-solving habits.
+- [How to Solve Overlapping Meeting Puzzles](https://blueberrybasement.com/articles/how-to-solve-overlapping-meeting-puzzles.html): Strategy for comparing continuous gaps, respecting locked events, moving meetings across days, and freeing scarce destinations.
+- [Meeting Mayhem Gameplay Guide](https://blueberrybasement.com/articles/meeting-mayhem-gameplay-guide.html): Android controls, fixed meeting duration, calendar limits, win condition, single-step Undo, and an overview of daily tasks and the Lucky Spinner.
+- [How a Crowded Work Calendar Inspired Meeting Mayhem](https://blueberrybasement.com/articles/designing-meeting-mayhem-puzzles.html): How a heavily filled work calendar inspired the game and how daily tasks and the Lucky Spinner supported its hybrid-casual direction.
+
+- [Meeting Mayhem Daily Tasks and Lucky Spinner Explained](https://blueberrybasement.com/articles/meeting-mayhem-daily-tasks-and-spinner.html): How task progress differs from claimed rewards, what a UTC reset means, and where the Lucky Spinner fits into mobile play.
+- [What Makes a Scheduling Puzzle Difficult?](https://blueberrybasement.com/articles/what-makes-scheduling-puzzles-difficult.html): Why a crowded calendar is not always a hard puzzle, and how duration, locked events and connected moves shape difficulty.
 
 ## Policies
 

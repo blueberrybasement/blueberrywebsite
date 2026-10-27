@@ -42,6 +42,7 @@ class SiteHeader extends HTMLElement {
                     </button>
                     <ul class="nav-links">
                         <li><a href="${sitePath("/")}"${linkClass("home")}>Home</a></li>
+                        <li><a href="${sitePath("/minit-games.html")}"${linkClass("minit")}>Minit Games</a></li>
                         <li><a href="${sitePath("/articles/")}"${linkClass("articles")}>Articles</a></li>
                         <li><a href="${sitePath("/#faq")}">FAQ</a></li>
                         <li><a href="${sitePath("/privacy.html")}"${linkClass("privacy")}>Privacy</a></li>
@@ -64,6 +65,7 @@ class SiteFooter extends HTMLElement {
                     </div>
                     <div class="footer-links">
                         <a href="mailto:contact@blueberrybasement.com">contact@blueberrybasement.com</a>
+                        <a href="${sitePath("/minit-games.html")}">Minit Games</a>
                         <a href="${sitePath("/#faq")}">FAQ</a>
                         <a href="${sitePath("/articles/")}">Articles</a>
                         <a href="${sitePath("/privacy.html")}">Privacy Policy</a>

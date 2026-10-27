@@ -1,8 +1,8 @@
-# Meeting Mayhem - Blueberry Basement
+# Blueberry Basement - Android and Minit Games
 
 > Meeting Mayhem is a free calendar scheduling puzzle game for Android on Google Play: slide meetings into open time slots, clear overlaps, solve schedule puzzles, use power-ups, and complete daily tasks in short sessions.
 
-Blueberry Basement is an indie label by Szymon Borowka. This static site is the public home for Meeting Mayhem: it summarizes gameplay, shows screenshots, answers common questions, links to the official Play Store listing, and hosts privacy and terms pages linked from the app.
+Blueberry Basement is an indie label by Szymon Borowka. Blueberry Basement also creates short-form games for Minit Games as @blueberrybasement. This static site is the public home for its games: it summarizes gameplay, shows screenshots, answers common questions, links to the official Play Store listing, and hosts privacy and terms pages linked from the app.
 
 The site is English-only. Meeting Mayhem is available for Android through the official Google Play listing below.
 
@@ -33,3 +33,17 @@ The site is English-only. Meeting Mayhem is available for Android through the of
 - [robots.txt](https://blueberrybasement.com/robots.txt): Crawl hints and sitemap URL for search engines.
 - [sitemap.xml](https://blueberrybasement.com/sitemap.xml): Canonical URL list for indexing.
 - [Contact (email)](mailto:contact@blueberrybasement.com): General inquiries about the game or site.
+
+## Minit Games
+
+Blueberry Basement publishes Meeting Mayhem, Lucky Lane, Ashen Ascent, Rainbow Roll and Riot Road on Minit Games. The Minit adaptation of Meeting Mayhem is separate from its Android app; Android daily tasks, spinner and progression are not features of the Minit edition. Each play link below opens a particular published Post, whose challenge may differ from other Posts of the same game.
+
+- [Our Minit Games](https://blueberrybasement.com/minit-games.html): Game collection and official play links.
+- [Meeting Mayhem on Minit Games](https://play.minit.games/play/lcdt02oz14): Move meetings, work around locked events and clear calendar overlaps. A compact adaptation of our Android puzzle game.
+- [Lucky Lane on Minit Games](https://play.minit.games/play/hj5x0w0jxw): Roll around a gold-filled board as safe spaces turn into skulls. Shields protect a landing, but every roll changes the risk.
+- [Ashen Ascent on Minit Games](https://play.minit.games/play/02np9s5fw6): Aim each jump and climb from ledge to ledge toward the crown. A missed landing can end the run.
+- [Rainbow Roll on Minit Games](https://play.minit.games/play/m8pdgfd0fi): Guide a ball across winding paths, narrow bridges and steep ramps. Collect coins while keeping enough control to reach the finish.
+- [Riot Road on Minit Games](https://play.minit.games/play/9be4hlwmta): Steer an automatically firing squad, recruit soldiers and collect stronger weapons. Dodge enemy attacks and fight through to the bosses.
+- [What Is Minit Games, and Why Are We Making Games for It?](https://blueberrybasement.com/articles/why-we-make-minit-games.html): Why Blueberry Basement is building for Minit Games: short, self-contained games, touch controls and different challenges from one game.
+- [Our Games on Minit: Puzzles, Platformers and a Squad Shooter](https://blueberrybasement.com/articles/our-games-on-minit.html): Explore five Blueberry Basement games on Minit Games, with gameplay summaries and direct play links for puzzles, platformers, dice survival and shooting.
+- [Meeting Mayhem on Android and Minit: What Changes?](https://blueberrybasement.com/articles/meeting-mayhem-android-and-minit.html): Compare Meeting Mayhem on Google Play with its Minit adaptation: the same calendar puzzle idea, with different session structure and surrounding features.

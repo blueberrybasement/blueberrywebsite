@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blueberrybasement.com/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://blueberrybasement.com/articles/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -66,4 +66,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://blueberrybasement.com/minit-games.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://blueberrybasement.com/articles/why-we-make-minit-games.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://blueberrybasement.com/articles/our-games-on-minit.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://blueberrybasement.com/articles/meeting-mayhem-android-and-minit.html</loc><lastmod>2026-10-27</lastmod></url>
 </urlset>

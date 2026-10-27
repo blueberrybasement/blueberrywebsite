@@ -137,6 +137,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    document.querySelectorAll('[data-analytics-event="minit_play_click"]').forEach(link => {
+        link.addEventListener('click', () => {
+            if (typeof window.gtag === 'function') window.gtag('event', 'minit_play_click', {
+                game_name: link.dataset.gameName, link_url: link.href, outbound: true, transport_type: 'beacon'
+            });
+        });
+    });
+
     const observerOptions = {
         root: null,
         rootMargin: "0px",

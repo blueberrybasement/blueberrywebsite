@@ -2,18 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VYH4NCNHG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-9VYH4NCNHG');
-    </script>
+    <script src="../js/analytics.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Mayhem Daily Tasks and Lucky Spinner Explained | Meeting Mayhem</title>
     <link rel="canonical" href="https://blueberrybasement.com/articles/meeting-mayhem-daily-tasks-and-spinner.html">
-    <link rel="icon" type="image/png" href="../assets/game/meeting-mayhem-logo-2026.png">
+    <link rel="icon" type="image/png" href="../assets/game/favicon.png">
     <meta name="description" content="Understand daily task progress, claiming rewards, UTC resets and the Lucky Spinner in Meeting Mayhem’s Android game.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta property="og:type" content="article">
@@ -51,6 +48,9 @@
       "inLanguage": "en"
     }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;display=swap">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/site-components.js" defer></script>
 </head>
@@ -77,7 +77,7 @@
                     <p>Meeting Mayhem’s main objective stays the same: move unlocked meetings until every calendar conflict is gone. Daily tasks add goals around that level play, such as completing levels or winning consecutive levels without failing.</p>
                     <p>The tasks and spinner become available as you progress and are accessed through the game’s menu. If you are still learning to drag meetings, start with the <a href="meeting-mayhem-gameplay-guide.html">gameplay guide</a>. The daily systems give you additional goals once you know how the board works.</p>
                     <figure class="article-figure">
-                        <img src="../assets/game/screenshots/daily-tasks.png" alt="Meeting Mayhem daily tasks screen showing goals and reward progress">
+                        <picture><source type="image/webp" srcset="../assets/game/screenshots/daily-tasks-480.webp 480w, ../assets/game/screenshots/daily-tasks-960.webp 960w, ../assets/game/screenshots/daily-tasks-1672.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), (max-width: 1080px) calc(100vw - 40px), 760px"><img src="../assets/game/screenshots/daily-tasks.png" alt="Meeting Mayhem daily tasks screen showing goals and reward progress" width="1672" height="941" loading="lazy" decoding="async"></picture>
                         <figcaption>Read each task’s goal, progress and claim state separately. Completing the objective and receiving its reward are different steps.</figcaption>
                     </figure>
 
@@ -102,7 +102,7 @@
                     <p>The Lucky Spinner is a reward wheel, rather than another scheduling board. The mobile game includes free spins and additional spins supported by rewarded ads, with daily availability and a cooldown between spins.</p>
                     <p>Check the spinner screen for your available action before expecting another spin. Having a completed daily task does not mean a spin is ready: task progress, spinner availability and the cooldown are separate checks.</p>
                     <figure class="article-figure">
-                        <img src="../assets/game/screenshots/daily-spinner.png" alt="Meeting Mayhem Lucky Spinner reward wheel">
+                        <picture><source type="image/webp" srcset="../assets/game/screenshots/daily-spinner-480.webp 480w, ../assets/game/screenshots/daily-spinner-960.webp 960w, ../assets/game/screenshots/daily-spinner-1672.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), (max-width: 1080px) calc(100vw - 40px), 760px"><img src="../assets/game/screenshots/daily-spinner.png" alt="Meeting Mayhem Lucky Spinner reward wheel" width="1672" height="941" loading="lazy" decoding="async"></picture>
                         <figcaption>The spinner provides a reward interaction alongside level play. Its availability is separate from daily task completion.</figcaption>
                     </figure>
 
@@ -121,7 +121,7 @@
                         <h2>Download</h2>
                         <p>Get Meeting Mayhem directly from Google Play.</p>
                         <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.BlueberryBasement.MeetingMayhem" target="_blank" rel="noopener" aria-label="Get Meeting Mayhem on Google Play" data-analytics-event="google_play_badge_click" data-download-location="meeting_mayhem_daily_tasks_and_spinner_sidebar">
-                            <img src="../assets/game/google-play-badge.png" alt="Get it on Google Play">
+                            <img src="../assets/game/google-play-badge.png" alt="Get it on Google Play" width="478" height="142" loading="lazy" decoding="async">
                         </a>
                     </div>
                     <div class="article-panel">
@@ -137,8 +137,8 @@
         </section>
     </main>
 
-    <site-footer></site-footer>
+    <site-footer><footer><div class="container footer-links"><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Use</a><a href="mailto:contact@blueberrybasement.com">contact@blueberrybasement.com</a></div></footer></site-footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../js/main.js" defer></script>
 </body>
 </html>

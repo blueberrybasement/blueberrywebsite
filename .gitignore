@@ -11,6 +11,7 @@ Site Analysis/
 
 # Dependencies and temporary files
 node_modules/
+/tmp/
 *.log
 *.tmp
 .DS_Store

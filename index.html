@@ -2,21 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VYH4NCNHG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-9VYH4NCNHG');
-    </script>
+    <script src="js/analytics.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blueberry Basement | Meeting Mayhem &amp; Minit Games</title>
     <link rel="canonical" href="https://blueberrybasement.com/">
     <link rel="alternate" hreflang="en" href="https://blueberrybasement.com/">
     <link rel="alternate" hreflang="x-default" href="https://blueberrybasement.com/">
-    <link rel="icon" type="image/png" href="assets/game/meeting-mayhem-logo-2026.png">
+    <link rel="icon" type="image/png" href="assets/game/favicon.png">
     <meta name="description" content="Discover Blueberry Basement games: Meeting Mayhem on Android, plus calendar puzzles, platformers and arcade challenges on Minit Games.">
     <meta name="keywords" content="Meeting Mayhem, calendar puzzle game, free Android puzzle game, schedule puzzle, casual logic game, meeting game, daily puzzle game, Google Play puzzle game">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -25,8 +21,8 @@
     <meta name="apple-mobile-web-app-title" content="Meeting Mayhem">
     <meta name="google-play-app" content="app-id=com.BlueberryBasement.MeetingMayhem">
 
-    <link rel="preload" href="assets/game/feature-2026.jpg" as="image" type="image/jpeg" media="(min-width: 761px)">
-    <link rel="preload" href="assets/game/vertical-feature-2026.jpg" as="image" type="image/jpeg" media="(max-width: 760px)">
+    <link rel="preload" href="assets/game/feature-2026-1024.webp" as="image" type="image/webp" imagesrcset="assets/game/feature-2026-640.webp 640w, assets/game/feature-2026-1024.webp 1024w" imagesizes="100vw" media="(min-width: 761px)">
+    <link rel="preload" href="assets/game/vertical-feature-2026-760.webp" as="image" type="image/webp" imagesrcset="assets/game/vertical-feature-2026-480.webp 480w, assets/game/vertical-feature-2026-760.webp 760w, assets/game/vertical-feature-2026-941.webp 941w" imagesizes="100vw" media="(max-width: 760px)">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Blueberry Basement">
@@ -163,6 +159,9 @@
     }
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;display=swap">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/site-components.js" defer></script>
 </head>
@@ -172,20 +171,22 @@
     <main>
         <section class="hero">
             <picture class="hero-art" aria-hidden="true">
-                <source media="(max-width: 760px)" srcset="assets/game/vertical-feature-2026.jpg">
-                <img src="assets/game/feature-2026.jpg" alt="Meeting Mayhem calendar puzzle game - colorful feature artwork with meetings and time blocks" fetchpriority="high" decoding="async">
+                <source media="(max-width: 760px)" type="image/webp" srcset="assets/game/vertical-feature-2026-480.webp 480w, assets/game/vertical-feature-2026-760.webp 760w, assets/game/vertical-feature-2026-941.webp 941w" sizes="100vw" width="941" height="1672">
+                <source media="(max-width: 760px)" srcset="assets/game/vertical-feature-2026.jpg" width="941" height="1672">
+                <source type="image/webp" srcset="assets/game/feature-2026-640.webp 640w, assets/game/feature-2026-1024.webp 1024w" sizes="100vw">
+                <img src="assets/game/feature-2026.jpg" alt="Meeting Mayhem calendar puzzle game - colorful feature artwork with meetings and time blocks" fetchpriority="high" decoding="async" width="1024" height="500">
             </picture>
             <div class="hero-shade"></div>
             <div class="container hero-container">
                 <div class="hero-copy fade-in">
-                    <img src="assets/game/meeting-mayhem-logo-2026.png" alt="Meeting Mayhem" class="hero-logo">
+                    <picture><source type="image/webp" srcset="assets/game/meeting-mayhem-logo-2026-164.webp 164w, assets/game/meeting-mayhem-logo-2026-328.webp 328w, assets/game/meeting-mayhem-logo-2026-492.webp 492w" sizes="(max-width: 760px) 104px, (max-width: 1172px) 14vw, 164px"><img src="assets/game/meeting-mayhem-logo-2026.png" alt="Meeting Mayhem" class="hero-logo" width="1254" height="1254" decoding="async"></picture>
                     <p class="eyebrow">Available now on Google Play</p>
                     <h1>Meeting Mayhem</h1>
                     <p class="hero-description">
                         A quick, satisfying puzzle game about untangling busy calendars. Slide meetings into cleaner slots, clear every overlap, and make the day make sense again.
                     </p>
                     <a href="https://play.google.com/store/apps/details?id=com.BlueberryBasement.MeetingMayhem&referrer=utm_source%3Dblueberrybasement.com%26utm_medium%3Dwebsite%26utm_campaign%3Dmeeting_mayhem_google_play_badge" target="_blank" rel="noopener" class="store-badge" aria-label="Get Meeting Mayhem on Google Play" data-analytics-event="google_play_badge_click" data-download-location="hero">
-                        <img src="assets/game/google-play-badge.png" alt="Get it on Google Play">
+                        <img src="assets/game/google-play-badge.png" alt="Get it on Google Play" width="478" height="142" decoding="async">
                     </a>
                 </div>
             </div>
@@ -208,7 +209,7 @@
             </div>
         </section>
 
-        <section class="minit-home" aria-labelledby="minit-home-heading"><div class="container minit-home-grid"><div><p class="eyebrow">We are also on Minit Games</p><h2 id="minit-home-heading">Five games. A fresh way to play.</h2><p>Calendar puzzles, dice survival, a climb to the crown, a rolling ball and a squad shooter. Explore short-form games by Blueberry Basement.</p><a class="minit-button" href="minit-games.html">Explore our Minit games &rarr;</a><p class="minit-caption"><a href="articles/why-we-make-minit-games.html">What is Minit Games, and why are we there?</a></p></div><a href="minit-games.html" aria-label="Explore five Blueberry Basement games on Minit Games"><img src="assets/minit/collection.jpg" alt="Blueberry Basement Minit game collection" width="1200" height="630" loading="lazy"></a></div></section>
+        <section class="minit-home" aria-labelledby="minit-home-heading"><div class="container minit-home-grid"><div><p class="eyebrow">We are also on Minit Games</p><h2 id="minit-home-heading">Five games. A fresh way to play.</h2><p>Calendar puzzles, dice survival, a climb to the crown, a rolling ball and a squad shooter. Explore short-form games by Blueberry Basement.</p><a class="minit-button" href="minit-games.html">Explore our Minit games &rarr;</a><p class="minit-caption"><a href="articles/why-we-make-minit-games.html">What is Minit Games, and why are we there?</a></p></div><a href="minit-games.html" aria-label="Explore five Blueberry Basement games on Minit Games"><picture><source type="image/webp" srcset="assets/minit/collection-600.webp 600w, assets/minit/collection-1200.webp 1200w" sizes="(max-width: 760px) calc(100vw - 28px), (max-width: 1200px) calc(50vw - 44px), 556px"><img src="assets/minit/collection.jpg" alt="Blueberry Basement Minit game collection" width="1200" height="630" loading="lazy" decoding="async"></picture></a></div></section>
 
         <section class="audience-section" aria-labelledby="audience-heading">
             <div class="container audience-grid">
@@ -246,7 +247,7 @@
                     </p>
                 </div>
                 <div class="media-frame showcase-media fade-on-scroll">
-                    <img src="assets/game/screenshots/resolve-all-overlaps.png" alt="Meeting Mayhem gameplay showing overlapping meetings to resolve">
+                    <picture><source type="image/webp" srcset="assets/game/screenshots/resolve-all-overlaps-480.webp 480w, assets/game/screenshots/resolve-all-overlaps-960.webp 960w, assets/game/screenshots/resolve-all-overlaps-1672.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), (max-width: 1200px) calc(50vw - 30px), 570px"><img src="assets/game/screenshots/resolve-all-overlaps.png" alt="Meeting Mayhem gameplay showing overlapping meetings to resolve" width="1672" height="941" loading="lazy" decoding="async"></picture>
                 </div>
             </div>
         </section>
@@ -259,19 +260,19 @@
                 </div>
                 <div class="screenshots-grid">
                     <button class="media-frame screenshot-card fade-on-scroll" type="button" aria-label="Enlarge Sort the schedule screenshot" data-lightbox-src="assets/game/screenshots/sort-the-schedule.png" data-lightbox-alt="Sorting a Meeting Mayhem schedule" data-lightbox-caption="Sort the schedule">
-                        <img src="assets/game/screenshots/sort-the-schedule.png" alt="Sorting a Meeting Mayhem schedule">
+                        <picture><source type="image/webp" srcset="assets/game/screenshots/sort-the-schedule-480.webp 480w, assets/game/screenshots/sort-the-schedule-960.webp 960w, assets/game/screenshots/sort-the-schedule-1672.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), (max-width: 1200px) calc(50vw - 30px), 570px"><img src="assets/game/screenshots/sort-the-schedule.png" alt="Sorting a Meeting Mayhem schedule" width="1672" height="941" loading="lazy" decoding="async"></picture>
                         <span class="sr-only">Sort the schedule</span>
                     </button>
                     <button class="media-frame screenshot-card fade-on-scroll" type="button" aria-label="Enlarge daily rewards screenshot" data-lightbox-src="assets/game/screenshots/daily-spinner.png" data-lightbox-alt="Meeting Mayhem daily spinner rewards" data-lightbox-caption="Collect daily rewards">
-                        <img src="assets/game/screenshots/daily-spinner.png" alt="Meeting Mayhem daily spinner rewards">
+                        <picture><source type="image/webp" srcset="assets/game/screenshots/daily-spinner-480.webp 480w, assets/game/screenshots/daily-spinner-960.webp 960w, assets/game/screenshots/daily-spinner-1672.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), (max-width: 1200px) calc(50vw - 30px), 570px"><img src="assets/game/screenshots/daily-spinner.png" alt="Meeting Mayhem daily spinner rewards" width="1672" height="941" loading="lazy" decoding="async"></picture>
                         <span class="sr-only">Collect daily rewards</span>
                     </button>
                     <button class="media-frame screenshot-card fade-on-scroll" type="button" aria-label="Enlarge daily tasks screenshot" data-lightbox-src="assets/game/screenshots/daily-tasks.png" data-lightbox-alt="Meeting Mayhem daily task list" data-lightbox-caption="Complete daily tasks">
-                        <img src="assets/game/screenshots/daily-tasks.png" alt="Meeting Mayhem daily task list">
+                        <picture><source type="image/webp" srcset="assets/game/screenshots/daily-tasks-480.webp 480w, assets/game/screenshots/daily-tasks-960.webp 960w, assets/game/screenshots/daily-tasks-1672.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), (max-width: 1200px) calc(50vw - 30px), 570px"><img src="assets/game/screenshots/daily-tasks.png" alt="Meeting Mayhem daily task list" width="1672" height="941" loading="lazy" decoding="async"></picture>
                         <span class="sr-only">Complete daily tasks</span>
                     </button>
                     <button class="media-frame screenshot-card fade-on-scroll" type="button" aria-label="Enlarge resolve all overlaps screenshot" data-lightbox-src="assets/game/screenshots/resolve-all-overlaps.png" data-lightbox-alt="Meeting Mayhem overlap puzzle graphic" data-lightbox-caption="Resolve all overlaps">
-                        <img src="assets/game/screenshots/resolve-all-overlaps.png" alt="Meeting Mayhem overlap puzzle graphic">
+                        <picture><source type="image/webp" srcset="assets/game/screenshots/resolve-all-overlaps-480.webp 480w, assets/game/screenshots/resolve-all-overlaps-960.webp 960w, assets/game/screenshots/resolve-all-overlaps-1672.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), (max-width: 1200px) calc(50vw - 30px), 570px"><img src="assets/game/screenshots/resolve-all-overlaps.png" alt="Meeting Mayhem overlap puzzle graphic" width="1672" height="941" loading="lazy" decoding="async"></picture>
                         <span class="sr-only">Resolve all overlaps</span>
                     </button>
                 </div>
@@ -406,17 +407,17 @@
                     <h2>Meeting Mayhem is live.</h2>
                     <p>Download it from Google Play and start turning calendar chaos into order.</p>
                     <a href="https://play.google.com/store/apps/details?id=com.BlueberryBasement.MeetingMayhem&referrer=utm_source%3Dblueberrybasement.com%26utm_medium%3Dwebsite%26utm_campaign%3Dmeeting_mayhem_google_play_badge" target="_blank" rel="noopener" class="store-badge" aria-label="Get Meeting Mayhem on Google Play" data-analytics-event="google_play_badge_click" data-download-location="download_section">
-                        <img src="assets/game/google-play-badge.png" alt="Get it on Google Play">
+                        <img src="assets/game/google-play-badge.png" alt="Get it on Google Play" width="478" height="142" loading="lazy" decoding="async">
                     </a>
                 </div>
                 <div class="media-frame download-art fade-on-scroll">
-                    <img src="assets/game/vertical-feature-2026.jpg" alt="Meeting Mayhem feature artwork">
+                    <picture><source type="image/webp" srcset="assets/game/vertical-feature-2026-480.webp 480w, assets/game/vertical-feature-2026-760.webp 760w, assets/game/vertical-feature-2026-941.webp 941w" sizes="(max-width: 1080px) calc(100vw - 40px), 440px"><img src="assets/game/vertical-feature-2026.jpg" alt="Meeting Mayhem feature artwork" width="941" height="1672" loading="lazy" decoding="async"></picture>
                 </div>
             </div>
         </section>
     </main>
 
-    <site-footer></site-footer>
+    <site-footer><footer><div class="container footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="mailto:contact@blueberrybasement.com">contact@blueberrybasement.com</a></div></footer></site-footer>
 
     <div class="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot preview" hidden>
         <button class="lightbox-close" type="button" aria-label="Close screenshot preview">
@@ -429,6 +430,6 @@
         </figure>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

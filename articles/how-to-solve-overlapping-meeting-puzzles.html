@@ -2,18 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VYH4NCNHG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-9VYH4NCNHG');
-    </script>
+    <script src="../js/analytics.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Solve Overlapping Meeting Puzzles | Meeting Mayhem</title>
     <link rel="canonical" href="https://blueberrybasement.com/articles/how-to-solve-overlapping-meeting-puzzles.html">
-    <link rel="icon" type="image/png" href="../assets/game/meeting-mayhem-logo-2026.png">
+    <link rel="icon" type="image/png" href="../assets/game/favicon.png">
     <meta name="description" content="Plan Meeting Mayhem moves by comparing meeting duration with free gaps, working around locked events and checking space across days to clear every conflict.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta property="og:type" content="article">
@@ -51,6 +48,9 @@
       "inLanguage": "en"
     }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;display=swap">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/site-components.js" defer></script>
 </head>
@@ -77,7 +77,7 @@
                     <p>In Meeting Mayhem, you can drag unlocked meetings to different times or days. Their duration stays fixed, and locked meetings cannot be moved by dragging. The calendar has a limited number of days and hours. A solution fits all the meetings inside that space without overlaps.</p>
                     <p>If the controls are still unfamiliar, start with the <a href="meeting-mayhem-gameplay-guide.html">gameplay guide</a>. The approach below is about planning ordinary meeting moves.</p>
                     <figure class="article-figure">
-                        <img src="../assets/game/screenshots/resolve-all-overlaps.png" alt="Meeting Mayhem calendar containing overlapping meetings">
+                        <picture><source type="image/webp" srcset="../assets/game/screenshots/resolve-all-overlaps-480.webp 480w, ../assets/game/screenshots/resolve-all-overlaps-960.webp 960w, ../assets/game/screenshots/resolve-all-overlaps-1672.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), (max-width: 1080px) calc(100vw - 40px), 760px"><img src="../assets/game/screenshots/resolve-all-overlaps.png" alt="Meeting Mayhem calendar containing overlapping meetings" width="1672" height="941" loading="lazy" decoding="async"></picture>
                         <figcaption>Check the full calendar before choosing a destination. Clearing one visible overlap can still leave another conflict elsewhere.</figcaption>
                     </figure>
 
@@ -121,7 +121,7 @@
                         <h2>Download</h2>
                         <p>Get Meeting Mayhem directly from Google Play.</p>
                         <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.BlueberryBasement.MeetingMayhem" target="_blank" rel="noopener" aria-label="Get Meeting Mayhem on Google Play" data-analytics-event="google_play_badge_click" data-download-location="overlap_guide_sidebar">
-                            <img src="../assets/game/google-play-badge.png" alt="Get it on Google Play">
+                            <img src="../assets/game/google-play-badge.png" alt="Get it on Google Play" width="478" height="142" loading="lazy" decoding="async">
                         </a>
                     </div>
                     <div class="article-panel">
@@ -139,8 +139,8 @@
         </section>
     </main>
 
-    <site-footer></site-footer>
+    <site-footer><footer><div class="container footer-links"><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Use</a><a href="mailto:contact@blueberrybasement.com">contact@blueberrybasement.com</a></div></footer></site-footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../js/main.js" defer></script>
 </body>
 </html>

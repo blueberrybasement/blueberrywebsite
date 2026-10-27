@@ -2,27 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VYH4NCNHG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-9VYH4NCNHG');
-    </script>
+    <script src="../js/analytics.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles | Blueberry Basement</title>
+    <title>Game Guides &amp; Articles | Blueberry Basement</title>
     <link rel="canonical" href="https://blueberrybasement.com/articles/">
-    <link rel="icon" type="image/png" href="../assets/game/meeting-mayhem-logo-2026.png">
+    <link rel="icon" type="image/png" href="../assets/game/favicon.png">
     <meta name="description" content="Meeting Mayhem guides, our Minit Games collection and design notes from Blueberry Basement.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://blueberrybasement.com/articles/">
-    <meta property="og:title" content="Articles | Blueberry Basement">
+    <meta property="og:title" content="Game Guides &amp; Articles | Blueberry Basement">
     <meta property="og:description" content="Meeting Mayhem guides, our Minit Games collection and design notes from Blueberry Basement.">
     <meta property="og:image" content="https://blueberrybasement.com/assets/game/feature-2026.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Articles | Blueberry Basement">
+    <meta name="twitter:title" content="Game Guides &amp; Articles | Blueberry Basement">
     <meta name="twitter:description" content="Meeting Mayhem guides, our Minit Games collection and design notes from Blueberry Basement.">
     <meta name="twitter:image" content="https://blueberrybasement.com/assets/game/feature-2026.jpg">
     <script type="application/ld+json">{
@@ -105,6 +102,9 @@
     ]
   }
 }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;display=swap">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/site-components.js" defer></script>
 </head>
@@ -133,6 +133,7 @@
                     </div></fieldset>
                     <div class="article-results-bar"><p id="article-result-count" role="status" aria-live="polite" aria-atomic="true">Showing all 10 articles</p><button type="button" class="article-reset" data-article-reset hidden>Clear filters</button></div>
                 </div>
+                <h2 class="sr-only">Browse our articles</h2>
                 <div class="article-grid article-library" id="article-results"><a class="article-card" href="why-we-make-minit-games.html" data-topics="minit studio" data-updated="2026-10-27">
                         <div><div class="article-card-topics"><span>Minit Games</span><span>Studio notes</span></div><h3>What Is Minit Games, and Why Are We Making Games for It?</h3><p>Why Blueberry Basement is building for Minit Games: short, self-contained games, touch controls and different challenges from one game.</p></div>
                         <div class="article-card-footer"><time datetime="2026-10-27">Updated 27 Oct 2026</time><span>Read article &rarr;</span></div>
@@ -183,19 +184,19 @@
                     <h2>Try Meeting Mayhem on Android.</h2>
                     <p>Download the free calendar puzzle game directly from its Google Play Store listing.</p>
                     <a href="https://play.google.com/store/apps/details?id=com.BlueberryBasement.MeetingMayhem" target="_blank" rel="noopener" class="store-badge" aria-label="Get Meeting Mayhem on Google Play" data-analytics-event="google_play_badge_click" data-download-location="articles_hub">
-                        <img src="../assets/game/google-play-badge.png" alt="Get it on Google Play">
+                        <img src="../assets/game/google-play-badge.png" alt="Get it on Google Play" width="478" height="142" loading="lazy" decoding="async">
                     </a>
                 </div>
                 <div class="download-art-plain fade-on-scroll">
-                    <img src="../assets/game/vertical-feature-2026.jpg" alt="Meeting Mayhem feature artwork">
+                    <picture><source type="image/webp" srcset="../assets/game/vertical-feature-2026-480.webp 480w, ../assets/game/vertical-feature-2026-760.webp 760w, ../assets/game/vertical-feature-2026-941.webp 941w" sizes="(max-width: 1080px) calc(100vw - 40px), 440px"><img src="../assets/game/vertical-feature-2026.jpg" alt="Meeting Mayhem feature artwork" width="941" height="1672" loading="lazy" decoding="async"></picture>
                 </div>
             </div>
         </section>
     </main>
 
-    <site-footer></site-footer>
+    <site-footer><footer><div class="container footer-links"><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Use</a><a href="mailto:contact@blueberrybasement.com">contact@blueberrybasement.com</a></div></footer></site-footer>
 
-    <script src="../js/main.js"></script>
-    <script src="../js/article-browser.js"></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/article-browser.js" defer></script>
 </body>
 </html>

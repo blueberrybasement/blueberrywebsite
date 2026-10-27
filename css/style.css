@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
 
 :root {
   --ink: #172033;
@@ -7,6 +6,7 @@
   --surface: #ffffff;
   --line: #dce5f2;
   --blue: #4361ee;
+  --blue-text: #3653d9;
   --coral: #ff6b59;
   --mint: #24c58a;
   --gold: #ffc857;
@@ -298,7 +298,7 @@ h3 {
 }
 
 .eyebrow {
-  color: var(--blue);
+  color: var(--blue-text);
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -606,7 +606,7 @@ h3 {
 .feature-card:nth-child(2) .feature-mark {
   background: #e8edff;
   border-color: rgba(67, 97, 238, 0.28);
-  color: var(--blue);
+  color: var(--blue-text);
 }
 
 .feature-card:nth-child(3) .feature-mark {

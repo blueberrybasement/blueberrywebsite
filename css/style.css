@@ -819,6 +819,7 @@ h3 {
 }
 
 .article-content {
+  min-width: 0;
   padding: clamp(28px, 5vw, 48px);
   background: var(--surface);
   border: 1px solid var(--line);
@@ -862,6 +863,36 @@ h3 {
 .article-content a {
   color: var(--blue);
   font-weight: 800;
+}
+
+.article-table-scroll {
+  overflow-x: auto;
+  margin: 22px 0;
+}
+
+.article-table {
+  width: 100%;
+  min-width: 360px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.article-table caption {
+  padding-bottom: 10px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.article-table th,
+.article-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.article-table thead {
+  background: var(--paper);
 }
 
 .article-sidebar {

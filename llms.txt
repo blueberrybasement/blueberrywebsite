@@ -13,6 +13,7 @@ The site is English-only. Meeting Mayhem is available for Android through the of
 - [Calendar Puzzle Games: How Scheduling Puzzles Work](https://blueberrybasement.com/articles/calendar-puzzle-game.html): Defines scheduling puzzles, explains Meeting Mayhem rules and calendar limits, and distinguishes digital scheduling from physical calendar puzzles.
 - [10 Free Android Puzzle Games for Short Sessions](https://blueberrybasement.com/articles/free-android-puzzle-games-short-sessions.html): Top 10 list of quick-play Android puzzle games, including Flow Free, Two Dots, Unblock Me, Meeting Mayhem, Sudoku.com, Infinity Loop, Blockudoku, Brain It On!, Puzzledom, and KAMI 2.
 - [Free Android Puzzle Games with Daily Challenges and Missions](https://blueberrybasement.com/articles/free-android-puzzle-games-daily-challenges.html): Compare five Android puzzle games with daily boards, regular-level missions and rotating events.
+- [How to Solve Visual Deduction Puzzles](https://blueberrybasement.com/articles/how-to-solve-visual-deduction-puzzles.html): Learn to scan for one trait, rule out lookalikes and check exact matches with a worked example from Bot Clue.
 - [Quick Browser Games for a 5-Minute Break](https://blueberrybasement.com/articles/quick-browser-games-five-minute-break.html): Play Cat Crossing, Rainbow Roll or Meeting Mayhem in the browser and find a good place to stop.
 - [How to Solve Overlapping Meeting Puzzles](https://blueberrybasement.com/articles/how-to-solve-overlapping-meeting-puzzles.html): Strategy for comparing continuous gaps, respecting locked events, moving meetings across days, and freeing scarce destinations.
 - [Meeting Mayhem Gameplay Guide](https://blueberrybasement.com/articles/meeting-mayhem-gameplay-guide.html): Android controls, fixed meeting duration, calendar limits, win condition, single-step Undo, and an overview of daily tasks and the Lucky Spinner.
@@ -38,7 +39,7 @@ The site is English-only. Meeting Mayhem is available for Android through the of
 
 ## Minit Games
 
-Blueberry Basement publishes Meeting Mayhem, Lucky Lane, Ashen Ascent, Rainbow Roll, Riot Road and Cat Crossing on Minit Games. The Minit adaptation of Meeting Mayhem is separate from its Android app; Android daily tasks, spinner and progression are not features of the Minit edition. Each play link below opens a particular published Post, whose challenge may differ from other Posts of the same game.
+Blueberry Basement publishes short browser puzzles and arcade games on Minit Games. The Minit adaptation of Meeting Mayhem is separate from its Android app; Android daily tasks, spinner and progression are not features of the Minit edition. Each play link below opens a particular published Post, whose challenge may differ from other Posts of the same game.
 
 - [Our Minit Games](https://blueberrybasement.com/minit-games.html): Game collection and official play links.
 - [Meeting Mayhem on Minit Games](https://play.minit.games/play/lcdt02oz14): Move meetings, work around locked events and clear calendar overlaps. A compact adaptation of our Android puzzle game.
@@ -47,8 +48,15 @@ Blueberry Basement publishes Meeting Mayhem, Lucky Lane, Ashen Ascent, Rainbow R
 - [Rainbow Roll on Minit Games](https://play.minit.games/play/m8pdgfd0fi): Guide a ball across winding paths, narrow bridges and steep ramps. Collect coins while keeping enough control to reach the finish.
 - [Riot Road on Minit Games](https://play.minit.games/play/9be4hlwmta): Steer an automatically firing squad, recruit soldiers and collect stronger weapons. Dodge enemy attacks and fight through to the bosses.
 - [What Is Minit Games, and Why Are We Making Games for It?](https://blueberrybasement.com/articles/why-we-make-minit-games.html): Why Blueberry Basement is building for Minit Games: short, self-contained games, touch controls and different challenges from one game.
-- [Our Games on Minit: Six Short-Form Games to Try](https://blueberrybasement.com/articles/our-games-on-minit.html): Explore six Blueberry Basement games on Minit Games, including Cat Crossing, with gameplay summaries and direct play links.
+- [Our Games on Minit: Play the Blueberry Basement Collection](https://blueberrybasement.com/articles/our-games-on-minit.html): Explore Blueberry Basement’s Minit games, from visual puzzles to arcade challenges, with gameplay summaries and direct play links.
 - [Meeting Mayhem on Android and Minit: What Changes?](https://blueberrybasement.com/articles/meeting-mayhem-android-and-minit.html): Compare Meeting Mayhem on Google Play with its Minit adaptation: the same calendar puzzle idea, with different session structure and surrounding features.
 
 - [Cat Crossing on Minit Games](https://play.minit.games/play/f7l5q4pfpy): Tap to hop an orange cat forward through low-poly traffic. Wait on the grass for a gap; a car hit ends the run. There is no time limit or finish line.
 - [Cat Crossing on Minit: One More Hop Through Traffic](https://blueberrybasement.com/articles/cat-crossing-on-minit.html): Meet our new 3D traffic game and see how its timing challenge fits our Minit collection.
+- [Bot Clue on Minit Games](https://play.minit.games/play/ars0suupmj): Tap three robots with the requested antenna, visor or chest panel before the order expires. Wrong taps cost lives.
+- [Crowd Clue on Minit Games](https://play.minit.games/play/shzvibafiz): Tap three people in a moving crowd who match the clue. When it shows two traits, look for both on the same person.
+- [Hollow Siege on Minit Games](https://play.minit.games/play/wytfdentgz): Drag to steer an automatic cannon, intercept the horde and break the defenses. Aim at the exposed core to finish the siege.
+- [Orbital Swarm on Minit Games](https://play.minit.games/play/v65matxs0p): Drag to steer a fleet that fires automatically. Shoot recruitment gates and weapon crates, dodge diving drones and take down both enemy ships.
+- [Wool Tally on Minit Games](https://play.minit.games/play/uj8tk39x9a): Tap to shear sheep, leave disguised wolves alone and remember how many sheep you sheared for the final quiz.
+- [Goblin Express on Minit Games](https://play.minit.games/play/uh3gcq4zfh): Drag sideways to steer a loaded cart, gather tips and avoid obstacles. Deliver as many parcels as you can to the post office.
+- [Captcha Hell on Minit Games](https://play.minit.games/play/qsi7haf6ex): Race a shared timer through a pixel-art human verification test. Tap choices, drag shapes into place and enter a distorted code.

@@ -66,11 +66,26 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url><loc>https://blueberrybasement.com/minit-games.html</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://blueberrybasement.com/articles/why-we-make-minit-games.html</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://blueberrybasement.com/articles/our-games-on-minit.html</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://blueberrybasement.com/articles/meeting-mayhem-android-and-minit.html</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://blueberrybasement.com/articles/cat-crossing-on-minit.html</loc><lastmod>2026-11-18</lastmod></url>
+  <url>
+    <loc>https://blueberrybasement.com/minit-games.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/articles/why-we-make-minit-games.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/articles/our-games-on-minit.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/articles/meeting-mayhem-android-and-minit.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/articles/cat-crossing-on-minit.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
   <url>
     <loc>https://blueberrybasement.com/articles/free-android-puzzle-games-daily-challenges.html</loc>
     <lastmod>2026-11-08</lastmod>
@@ -79,5 +94,76 @@
     <loc>https://blueberrybasement.com/articles/quick-browser-games-five-minute-break.html</loc>
     <lastmod>2026-11-08</lastmod>
   </url>
-  <url><loc>https://blueberrybasement.com/articles/how-to-solve-visual-deduction-puzzles.html</loc><lastmod>2026-11-18</lastmod></url>
+  <url>
+    <loc>https://blueberrybasement.com/articles/how-to-solve-visual-deduction-puzzles.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/calendar-puzzle-game.html</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/free-android-puzzle-games-short-sessions.html</loc>
+    <lastmod>2026-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/how-to-solve-overlapping-meeting-puzzles.html</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/meeting-mayhem-gameplay-guide.html</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/designing-meeting-mayhem-puzzles.html</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/meeting-mayhem-daily-tasks-and-spinner.html</loc>
+    <lastmod>2026-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/what-makes-scheduling-puzzles-difficult.html</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/minit-games.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/why-we-make-minit-games.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/our-games-on-minit.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/meeting-mayhem-android-and-minit.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/cat-crossing-on-minit.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/free-android-puzzle-games-daily-challenges.html</loc>
+    <lastmod>2026-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/quick-browser-games-five-minute-break.html</loc>
+    <lastmod>2026-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/how-to-solve-visual-deduction-puzzles.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
 </urlset>

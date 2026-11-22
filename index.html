@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+    <script src="/js/site-language.js" defer></script>
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VYH4NCNHG"></script>
@@ -10,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blueberry Basement | Meeting Mayhem &amp; Minit Games</title>
     <link rel="canonical" href="https://blueberrybasement.com/">
-    <link rel="alternate" hreflang="en" href="https://blueberrybasement.com/">
-    <link rel="alternate" hreflang="x-default" href="https://blueberrybasement.com/">
+
+
     <link rel="icon" type="image/png" href="assets/game/favicon.png">
     <meta name="description" content="Discover Blueberry Basement games: Meeting Mayhem on Android, plus calendar puzzles, platformers and arcade challenges on Minit Games.">
     <meta name="keywords" content="Meeting Mayhem, calendar puzzle game, free Android puzzle game, schedule puzzle, casual logic game, meeting game, daily puzzle game, Google Play puzzle game">
@@ -164,9 +165,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;display=swap">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/site-components.js" defer></script>
+
+    <link rel="alternate" hreflang="en" href="https://blueberrybasement.com/">
+    <link rel="alternate" hreflang="pl" href="https://blueberrybasement.com/pl/">
+    <link rel="alternate" hreflang="x-default" href="https://blueberrybasement.com/">
+    <link rel="stylesheet" href="/css/site-language.css">
 </head>
 <body>
     <site-header active="home"></site-header>
+    <details class="site-language"><summary aria-label="Site language: English">EN</summary><div class="site-language-options"><a href="/" lang="en" hreflang="en" data-site-language="en" aria-current="page">EN<span class="sr-only"> (English)</span></a><a href="/pl/" lang="pl" hreflang="pl" data-site-language="pl">PL<span class="sr-only"> (Polski)</span></a></div></details>
+
 
     <main>
         <section class="hero">

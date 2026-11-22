@@ -10,7 +10,10 @@
     const empty = document.getElementById('article-empty');
     const reset = controls.querySelector('[data-article-reset]');
     const buttons = Array.from(controls.querySelectorAll('[data-topic]'));
-    const normalize = text => text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const locale = document.documentElement.lang === 'pl' ? 'pl' : 'en';
+    const plural = new Intl.PluralRules(locale);
+    const articleForm = value => ({ one: 'artykuł', few: 'artykuły', many: 'artykułów' })[plural.select(value)] || 'artykułu';
+    const normalize = text => text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase(locale).replace(/ł/g, 'l');
     const entries = cards.map((card, index) => ({
         card, index,
         topics: card.dataset.topics.split(' '),
@@ -24,7 +27,7 @@
         const words = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
         const matchesSearch = entry => words.every(word => entry.text.includes(word));
         const ordered = [...entries].sort((a, b) => {
-            if (sort.value === 'title') return a.title.localeCompare(b.title, 'en') || a.index - b.index;
+            if (sort.value === 'title') return a.title.localeCompare(b.title, locale) || a.index - b.index;
             if (sort.value === 'updated') return b.updated.localeCompare(a.updated) || a.index - b.index;
             return a.index - b.index;
         });
@@ -39,7 +42,9 @@
             button.setAttribute('aria-pressed', String(key === topic));
             button.querySelector('[data-topic-count]').textContent = entries.filter(entry => matchesSearch(entry) && (key === 'all' || entry.topics.includes(key))).length;
         });
-        count.textContent = visible === entries.length ? `Showing all ${visible} articles` : `Showing ${visible} of ${entries.length} articles`;
+        count.textContent = locale === 'pl'
+            ? (visible === entries.length ? `Wyniki: wszystkie ${visible} ${articleForm(visible)}` : `Wyniki: ${visible} z ${entries.length} artykułów`)
+            : (visible === entries.length ? `Showing all ${visible} articles` : `Showing ${visible} of ${entries.length} articles`);
         empty.hidden = visible !== 0;
         reset.hidden = topic === 'all' && !search.value && sort.value === 'recommended';
     };

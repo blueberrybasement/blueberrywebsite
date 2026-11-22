@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const siteNav = document.querySelector(".site-nav");
     const mobileToggle = document.querySelector(".mobile-toggle");
     const navLinks = document.querySelector(".nav-links");
+    const polishMenu = document.documentElement.lang === "pl";
+    const openMenuLabel = polishMenu ? "Otwórz menu" : "Open menu";
+    const closeMenuLabel = polishMenu ? "Zamknij menu" : "Close menu";
 
     const updateNavState = () => {
         siteNav?.classList.toggle("is-scrolled", window.scrollY > 12);
@@ -16,14 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
             navLinks.classList.toggle("active");
             const isOpen = navLinks.classList.contains("active");
             mobileToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-            mobileToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+            mobileToggle.setAttribute("aria-label", isOpen ? closeMenuLabel : openMenuLabel);
         });
 
         navLinks.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
                 navLinks.classList.remove("active");
                 mobileToggle.setAttribute("aria-expanded", "false");
-                mobileToggle.setAttribute("aria-label", "Open menu");
+                mobileToggle.setAttribute("aria-label", openMenuLabel);
             });
         });
     }

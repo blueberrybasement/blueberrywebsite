@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blueberrybasement.com/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://blueberrybasement.com/articles/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,7 +68,7 @@
   </url>
   <url>
     <loc>https://blueberrybasement.com/minit-games.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://blueberrybasement.com/articles/why-we-make-minit-games.html</loc>
@@ -76,7 +76,7 @@
   </url>
   <url>
     <loc>https://blueberrybasement.com/articles/our-games-on-minit.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://blueberrybasement.com/articles/meeting-mayhem-android-and-minit.html</loc>
@@ -100,11 +100,11 @@
   </url>
   <url>
     <loc>https://blueberrybasement.com/pl/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://blueberrybasement.com/pl/articles/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://blueberrybasement.com/pl/articles/calendar-puzzle-game.html</loc>
@@ -136,7 +136,7 @@
   </url>
   <url>
     <loc>https://blueberrybasement.com/pl/minit-games.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://blueberrybasement.com/pl/articles/why-we-make-minit-games.html</loc>
@@ -144,7 +144,7 @@
   </url>
   <url>
     <loc>https://blueberrybasement.com/pl/articles/our-games-on-minit.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://blueberrybasement.com/pl/articles/meeting-mayhem-android-and-minit.html</loc>
@@ -165,5 +165,13 @@
   <url>
     <loc>https://blueberrybasement.com/pl/articles/how-to-solve-visual-deduction-puzzles.html</loc>
     <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/articles/plus-one-dino-per-click.html</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://blueberrybasement.com/pl/articles/plus-one-dino-per-click.html</loc>
+    <lastmod>2026-11-25</lastmod>
   </url>
 </urlset>

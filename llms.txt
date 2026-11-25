@@ -43,15 +43,15 @@ Blueberry Basement publishes short browser puzzles and arcade games on Minit Gam
 
 - [Our Minit Games](https://blueberrybasement.com/minit-games.html): Game collection and official play links.
 - [Meeting Mayhem on Minit Games](https://play.minit.games/play/lcdt02oz14): Move meetings, work around locked events and clear calendar overlaps. A compact adaptation of our Android puzzle game.
-- [Lucky Lane on Minit Games](https://play.minit.games/play/hj5x0w0jxw): Roll around a gold-filled board as safe spaces turn into skulls. Shields protect a landing, but every roll changes the risk.
-- [Ashen Ascent on Minit Games](https://play.minit.games/play/02np9s5fw6): Aim each jump and climb from ledge to ledge toward the crown. A missed landing can end the run.
+- [Lucky Lane on Minit Games](https://play.minit.games/play/llv420t561): Check the six possible landings, roll for more gold or bank the full haul. An unshielded skull costs the displayed share.
+- [Ashen Ascent on Minit Games](https://play.minit.games/play/ubffxqnzhf): Aim each jump from a ledge, collect gold and reach the crown. A fast ascent earns a summit bonus.
 - [Rainbow Roll on Minit Games](https://play.minit.games/play/m8pdgfd0fi): Guide a ball across winding paths, narrow bridges and steep ramps. Collect coins while keeping enough control to reach the finish.
-- [Riot Road on Minit Games](https://play.minit.games/play/9be4hlwmta): Steer an automatically firing squad, recruit soldiers and collect stronger weapons. Dodge enemy attacks and fight through to the bosses.
+- [Riot Road on Minit Games](https://play.minit.games/play/tjqs5gpg7n): Steer an automatically firing squad, recruit soldiers and collect stronger weapons. Dodge enemy attacks and fight through to the bosses.
 - [What Is Minit Games, and Why Are We Making Games for It?](https://blueberrybasement.com/articles/why-we-make-minit-games.html): Why Blueberry Basement is building for Minit Games: short, self-contained games, touch controls and different challenges from one game.
 - [Our Games on Minit: Play the Blueberry Basement Collection](https://blueberrybasement.com/articles/our-games-on-minit.html): Explore Blueberry Basement’s Minit games, from visual puzzles to arcade challenges, with gameplay summaries and direct play links.
 - [Meeting Mayhem on Android and Minit: What Changes?](https://blueberrybasement.com/articles/meeting-mayhem-android-and-minit.html): Compare Meeting Mayhem on Google Play with its Minit adaptation: the same calendar puzzle idea, with different session structure and surrounding features.
 
-- [Cat Crossing on Minit Games](https://play.minit.games/play/f7l5q4pfpy): Tap to hop an orange cat forward through low-poly traffic. Wait on the grass for a gap; a car hit ends the run. There is no time limit or finish line.
+- [Cat Crossing on Minit Games](https://play.minit.games/play/sjm0or9jov): Tap to hop an orange cat forward through low-poly traffic. Wait on the grass for a gap; a car hit ends the run. There is no time limit or finish line.
 - [Cat Crossing on Minit: One More Hop Through Traffic](https://blueberrybasement.com/articles/cat-crossing-on-minit.html): Meet our new 3D traffic game and see how its timing challenge fits our Minit collection.
 - [Bot Clue on Minit Games](https://play.minit.games/play/ars0suupmj): Tap three robots with the requested antenna, visor or chest panel before the order expires. Wrong taps cost lives.
 - [Crowd Clue on Minit Games](https://play.minit.games/play/shzvibafiz): Tap three people in a moving crowd who match the clue. When it shows two traits, look for both on the same person.
@@ -60,3 +60,11 @@ Blueberry Basement publishes short browser puzzles and arcade games on Minit Gam
 - [Wool Tally on Minit Games](https://play.minit.games/play/uj8tk39x9a): Tap to shear sheep, leave disguised wolves alone and remember how many sheep you sheared for the final quiz.
 - [Goblin Express on Minit Games](https://play.minit.games/play/uh3gcq4zfh): Drag sideways to steer a loaded cart, gather tips and avoid obstacles. Deliver as many parcels as you can to the post office.
 - [Captcha Hell on Minit Games](https://play.minit.games/play/qsi7haf6ex): Race a shared timer through a pixel-art human verification test. Tap choices, drag shapes into place and enter a distorted code.
+- [Noodle Route on Minit Games](https://play.minit.games/play/w50rbqcxxd): Draw one unbroken noodle from the first ingredient to the last.
+- [Goblin Desks on Minit Games](https://play.minit.games/play/imtg79txws): Seat one goblin in each row, column and department.
+- [Basket Shift on Minit Games](https://play.minit.games/play/huwuxvb3o5): Watch the four chutes and tap below the egg that will arrive first.
+- [Magnet Magic on Minit Games](https://play.minit.games/play/qdexvtq08j): Each magnet pulls matching gems toward its edge of the board.
+
+## +1 Dino per Click!
+
+- [Fossils, mounts and rebirth](https://blueberrybasement.com/articles/plus-one-dino-per-click.html): Player guide to the Playgama sandbox.
